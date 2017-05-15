@@ -4,7 +4,7 @@ h1 {
   text-transform: uppercase;
   font-family:'Inknut Antiqua', Helvetica, san-serif;
   letter-spacing: 0.3em;
-  color: white;
+  color: black;
   font-size: 38px;
   padding-left: 40px;
   float: left;
@@ -14,7 +14,6 @@ h1 {
 
 
 .main-navigation {
-   background-color: black;
    height: 100px;
 
  }
@@ -22,24 +21,25 @@ h1 {
  ul {
    list-style-type: none;
    font-family: 'Jesefin Sans',Helvetica, san-serif;
-   padding-left: 600px;
+   padding-left:20%;
+   overflow:hidden;
  }
 
  li {
    float: left;
    display: inline-block;
    line-height: 100px;
+   padding: 0px 5%;
 
  }
 
 a:link {
-  padding: 14px 16px;
   text-decoration:none;
-  color: white;
+  color: black;
 }
 
 a:visited {
-  color:white;
+  color:black;
 }
 
 a:hover {
