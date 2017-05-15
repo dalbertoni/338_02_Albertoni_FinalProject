@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Inknut+Antiqua');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+h1 {
+  text-transform: uppercase;
+  font-family:'Inknut Antiqua', Helvetica, san-serif;
+  letter-spacing: 0.3em;
+  color: white;
+  font-size: 38px;
+  padding-left: 40px;
+  float: left;
+  margin-top: 0px;
+
+}
+
+
+.main-navigation {
+   background-color: black;
+   height: 100px;
+
+ }
+
+ ul {
+   list-style-type: none;
+   font-family: 'Jesefin Sans',Helvetica, san-serif;
+   padding-left: 600px;
+ }
+
+ li {
+   float: left;
+   display: inline-block;
+   line-height: 100px;
+
+ }
+
+a:link {
+  padding: 14px 16px;
+  text-decoration:none;
+  color: white;
+}
+
+a:visited {
+  color:white;
+}
+
+a:hover {
+  color:red;
+}
+
+a:active {
+  color:none;
+}
