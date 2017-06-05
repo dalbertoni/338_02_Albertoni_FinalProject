@@ -6,7 +6,7 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+} /* background photo for website */
 
 header {
   width: 100%;
@@ -112,10 +112,11 @@ img {
   padding-top:10%;
 }
 
-.grid_9 {
+.grid_6 {
   height: 100%;
   width: 100%;
   background: rgba(255,255,255,.2);
+
 }
 
 .grid_3 {
@@ -124,9 +125,50 @@ img {
   background: rgba(255,255,255,.2);
 }
 
+.grid_12 {
+  height: 100%;
+  width: 100%;
+  background: rgba(255,255,255,.2);
+}
+
 h2 {
   padding-left: 20px;
+  color: black;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 300%;
+  font-variant: small-caps;
 
+
+}
+
+h3 {
+  color: black;
+  font-weight: lighter;
+  font-size: 200%;
+  text-align: center;
+
+
+}
+h4 {
+  color: black;
+  font-weight: lighter;
+  padding-left: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: 10px;
+    margin-bottom: 30px;
+
+}
+
+tr:nth-child(even) {
+  background: rgba(255,255,255,.2);
+}
+
+hr {
+  color: black;
 }
 /* GRID 960 Styles */
 /*
