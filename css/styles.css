@@ -43,6 +43,20 @@ html, body {
   overflow: hidden;
 }
 
+.gettingtherebackground {
+  background: url("/Users/daniellealbertoni/Desktop/338_02_Albertoni_FinalProject/images/railway.jpg") no-repeat center center fixed;
+/* image src url: https://pixabay.com/en/railway-station-cologne-train-619082/ */
+  background-attachment:fixed;
+  padding: 20px;
+  width: 100%;
+  margin: -20px;
+  height: 700px;
+  background-position: 0% 0%;
+  background-size: cover;
+  overflow: hidden;
+
+}
+
 /* Heading Style */
 header {
   width: 100%;
@@ -59,7 +73,7 @@ h1 {
   padding-left: 10%;
   padding-top: 100px;
   font-size: 100px;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Amatic SC', Georgia Times, sans-serif;
   font-weight: bold;
 }
 
@@ -75,7 +89,7 @@ nav a {
   text-decoration: none;
   padding-left: 10%;
   font-size: 30px;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Amatic SC', Georgia Times, sans-serif;
   overflow-x: hidden;
 }
 
@@ -155,7 +169,7 @@ img {
 }
 .intro p {
   float:left;
-  font-family: 'Cormorant Garamond';
+  font-family: 'Cormorant Garamond', Georgia Times, sans-serif;
 
 }
 
@@ -207,13 +221,14 @@ hr {
   color: black;
   font-size: 50px;
   text-decoration: none;
-  font-family: 'Cormorant Garamond';
+  font-family: 'Cormorant Garamond', Georgia Times, sans-serif;
 
 }
 
 /* Backpacking html page */
+/* Referenced Her Packing List for this page. Src url: http://herpackinglist.com/2015/05/packing-list-for-japan-in-summer/ */
 h2 {
-  font-family: 'Cormorant Garamond';
+  font-family: 'Cormorant Garamond', Georgia Times, sans-serif;
   text-align: center;
   font-size: 50px;
   font-weight: lighter;
@@ -225,7 +240,7 @@ h2 {
 }
 
 td {
-  font-family: 'Cormorant Garamond';
+  font-family: 'Cormorant Garamond', Georgia Times, sans-serif;
   font-weight: lighter;
   font-size: 20px;
 }
@@ -247,8 +262,43 @@ td {
   padding-left: 20%;
 }
 
+/* "Getting There html page"*/
 
+h3 {
+  font-family: 'Cormorant Garamond', Georgia Times, sans-serif;
+  text-align: center;
+  font-size: 20px;
+  font-weight: lighter;
+}
 
+.jr_map {
+  float:left;
+  padding-left: 25%;
+}
+
+th {
+  font-family: 'Cormorant Garamond', Georgia Times, sans-serif;
+  text-align: center;
+  font-size: 25px;
+}
+
+table {
+  padding-left: 14%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+.green {
+  background-color: #adebad;
+}
+
+.ordinary {
+  background-color: #d7adeb;
+}
+
+.grey {
+  background-color: #e6e6e6;
+}
 
 
 /* GRID 960 Styles */
