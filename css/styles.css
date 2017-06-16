@@ -1,13 +1,49 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
 
-html {
-  background: url("/Users/daniellealbertoni/Desktop/338_02_Albertoni_FinalProject/images/FujiBackground.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+html, body {
   background-size: cover;
-} /* background photo for website */
+}
 
+/* Backgrounds */
+.headbackground {
+  background: url("/Users/daniellealbertoni/Desktop/338_02_Albertoni_FinalProject/images/Mt_Fuji_Japan_Cover.jpg") no-repeat center center fixed;
+  background-attachment:fixed;
+  padding: 20px;
+  width: 100%;
+  margin: -20px;
+  height: 700px;
+  background-position: 0% 0%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.itinerarybackground {
+  background: url("/Users/daniellealbertoni/Desktop/338_02_Albertoni_FinalProject/images/Umbrella.jpg") no-repeat center center fixed;
+  background-attachment:fixed;
+  padding: 20px;
+  width: 100%;
+  margin: -20px;
+  height: 700px;
+  background-position: 0% 0%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.backpackbackground {
+  background: url("/Users/daniellealbertoni/Desktop/338_02_Albertoni_FinalProject/images/Backpacking.jpg") no-repeat center center fixed;
+/* image src url: https://pixabay.com/en/backpack-blur-boots-close-up-1868720/ */
+  background-attachment:fixed;
+  padding: 20px;
+  width: 100%;
+  margin: -20px;
+  height: 700px;
+  background-position: 0% 0%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* Heading Style */
 header {
   width: 100%;
   margin: 0px;
@@ -27,9 +63,11 @@ h1 {
   font-weight: bold;
 }
 
+ /*Home Page Nav*/
 nav {
   padding-top: 600px;
   list-style-type: none;
+
 }
 
 nav a {
@@ -63,14 +101,11 @@ nav a:active {
   color: salmon;
 }
 
-
+/* Fixed nav bar on pages aside from home page*/
 .topnav header {
   position: fixed; /* Set the navbar to fixed position */
-  background: url("/Users/daniellealbertoni/Desktop/338_02_Albertoni_FinalProject/images/FujiBackground.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: white;
+  z-index: 3; /* pushes "position:relative" information behind navbar*/
 }
 .topnav h1 {
 font-size: 50px;
@@ -103,73 +138,119 @@ padding-top: 0px;
 }
 
 img {
-  display: block;
+  display:block;
 }
 
-.content {
+
+.intro {
+  padding-top: 5%;
+}
+/*Adjusts image in introduction*/
+
+.map {
   float:left;
-  padding-left: 10%;
-  padding-top:10%;
+  margin-right: 15%;
+  padding-left: 5%;
+  padding-bottom: 5%;
 }
+.intro p {
+  float:left;
+  font-family: 'Cormorant Garamond';
 
-.grid_6 {
-  height: 100%;
-  width: 100%;
-  background: rgba(255,255,255,.2);
-
-}
-
-.grid_3 {
-  height: 100%;
-  width: 100%;
-  background: rgba(255,255,255,.2);
-}
-
-.grid_12 {
-  height: 100%;
-  width: 100%;
-  background: rgba(255,255,255,.2);
-}
-
-h2 {
-  padding-left: 20px;
-  color: black;
-  font-weight: lighter;
-  text-align: center;
-  font-size: 300%;
-  font-variant: small-caps;
-
-
-}
-
-h3 {
-  color: black;
-  font-weight: lighter;
-  font-size: 200%;
-  text-align: center;
-
-
-}
-h4 {
-  color: black;
-  font-weight: lighter;
-  padding-left: 10px;
-}
-
-table {
-    border-collapse: collapse;
-    margin-left: 10px;
-    margin-bottom: 30px;
-
-}
-
-tr:nth-child(even) {
-  background: rgba(255,255,255,.2);
 }
 
 hr {
   color: black;
+  width: 80%;
 }
+.container_12 {
+  padding-top: 5%;
+}
+
+ /* Styling for opaque hover in itinerary */
+ .grid_4 {
+   position:relative;
+   width: 50%;
+   padding-bottom: 5px;
+ }
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.image {
+  opacity:1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border-radius: 25px;
+}
+
+.grid_4:hover .image {
+  opacity: 0.3;
+  padding: 0px;
+
+}
+
+.grid_4:hover .middle {
+  opacity: 1;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.text{
+  color: black;
+  font-size: 50px;
+  text-decoration: none;
+  font-family: 'Cormorant Garamond';
+
+}
+
+/* Backpacking html page */
+h2 {
+  font-family: 'Cormorant Garamond';
+  text-align: center;
+  font-size: 50px;
+  font-weight: lighter;
+}
+ /* Table for "Clothes" section of Backpacking*/
+.clothing table {
+  padding-left: 28%;
+  padding-bottom: 5%;
+}
+
+td {
+  font-family: 'Cormorant Garamond';
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.cosmetics tr {
+  text-align: center;
+  height: 50px;
+}
+
+.cosmetics {
+  padding-left: 38%;
+}
+
+.electronics {
+  padding-left: 24%
+}
+
+.extras {
+  padding-left: 20%;
+}
+
+
+
+
+
 /* GRID 960 Styles */
 /*
   960 Grid System ~ Core CSS.
